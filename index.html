@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 <body>
-    <div class="trivi">
-        <h1>Api De Juan Camilo Marin</h1>
-    </div>
+    
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <form action="/questions" onsubmit="event.preventDefault(), getQuestions()">
-                            <div class="form-group">
-                                <label for="total-questions">Cantidad de preguntas</label>
-                                <input type="number" class="form-control" id="total-questions" value="10" min="1" max="50">
+                        <h6>Inicia Sesión</h6>
+                        <hr>
+                        <form onsubmit="event.preventDefault(), login()" action="/validate-login">
+                            <div class="mb-3">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                             </div>
-                            <div class="form-group">
-                                <label for="select-category">Categoría</label>
-                                <select class="form-control" id="select-category">
-                                </select>
+                            <div class="mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="password" requiredhghb>
                             </div>
-                            <div class="form-group">
-                                <label for="total-difficulty">Dificultad</label>
-                                <select class="form-control" id="total-difficulty">
-                                    <option value="easy">easy</option>
-                                    <option value="medium">medium</option>
-                                    <option value="hard">hard</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="total-type">Tipo</label>
-                                <select class="form-control" id="total-type">
-                                    <option value="multiple">opcion multiple</option>
-                                    <option value="boolean">verdadero y/o falso</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Obtener preguntas</button>
-                        </form>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="./register.html" class="btn btn-success">Registro</a>
+                        </form> 
                     </div>
                 </div>
             </div>
-        </div>
+        </div>            
+    </div>
     
-
-        <div id="container2">
-            <form id="questions-container" onsubmit="event.preventDefault(), buttonDC()">
-    
-            </form>
-        </div> 
-<script src="./api.js"></script>
-
+    <script src="./login.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
