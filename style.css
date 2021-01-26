@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.button-add { 
+  margin-top: 30px;
+    margin-left: 40%;
+}
+.trivi {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c2t5JTIwY2xvdWR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.card{
+  background: #fff; 
+  }
